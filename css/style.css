@@ -1,0 +1,80 @@
+/* common css section start  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* common css section end  */
+/* nav css section start  */
+nav{
+    background-color: #ffece1;
+}
+nav .row{
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav .logo{
+    width: 10%;
+}
+nav .menu{
+    width: 65%;
+}
+nav .shop_cart{
+    width: 25%;
+}
+nav .menu ul{
+    display: flex;
+    justify-content: center;
+}
+nav .menu ul li a{
+    display: inline-block;
+    color: #649483;
+    font-size: 19px;
+    text-transform: capitalize;
+    padding: 52px 21px;
+    transition: 0.5s;
+}
+nav .menu ul li a:hover{
+    color: #dd7017;
+}
+nav .shop_cart ul{
+    display: flex;
+}
+nav .shop_cart ul li a{
+    padding: 9px;
+    color: #649483;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+nav .shop_cart ul li a i{
+    font-size: 25px;
+}
+nav .shop_cart ul li .menu_btn{
+    background-color: #649483;
+    padding: 11px 9px;
+    color: #ffece1;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+nav .shop_cart ul li:hover .menu_btn{
+    background-color: #dd7017;
+}
+/* nav css section end  */
