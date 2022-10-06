@@ -85,17 +85,20 @@ nav .shop_cart ul li:hover .menu_btn{
 #banner{
     background: #ffebe1;
     position: relative;
+    z-index: 1;
 }
-#banner img .shape{
+#banner .shape{
     position: absolute;
 }
-#banner img .shape1{
+#banner .shape-1{
     top: 0;
-    left: 0;
+    left: -80px;
+    z-index: -1;
 }
-#banner img .shape2{
+#banner .shape-2{
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
 #banner .banner_img{
     width: 50%;
@@ -148,12 +151,13 @@ nav .shop_cart ul li:hover .menu_btn{
     color: #639383;
 }
 #banner .container .meal_option{
-    margin-top: 74px;
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     background-color: #dd6f17;
     padding: 19px 21px;
     margin-bottom: 140px;
+    border-radius: 25px;
 }
 #banner .container .meal_option .meal_iteam{
     width: 25%;
@@ -166,3 +170,45 @@ nav .shop_cart ul li:hover .menu_btn{
      text-align: center;
 }
 /* Banner css section end  */
+/* Our Favorite css section start  */
+#favorite{
+    background: #649483;
+    padding: 115px 0;
+}
+#favorite .title h1{
+    font-size: 80px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #ffebe1;
+}
+#favorite .title p{
+    font-size: 14px;
+    color: #ffebe1;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+#favorite .row .fav_iteam{
+    width: 30%;
+    background-color: #ffebe1;
+    margin: 0 14px;
+    padding: 70px 30px;
+    border-radius: 25px;
+}
+#favorite .row .fav_iteam h6{
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #639383;
+} 
+#favorite .row .fav_iteam img{
+    padding: 36px 30px;
+}
+#favorite .row .fav_iteam p{
+    width: 232px;
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    color: #639383;
+}
+/* Our Favorite css section end  */
