@@ -91,7 +91,7 @@ nav .shop_cart ul li:hover .menu_btn{
     position: absolute;
 }
 #banner .shape-1{
-    top: 0;
+    top: -110px;
     left: -80px;
     z-index: -1;
 }
@@ -275,5 +275,107 @@ nav .shop_cart ul li:hover .menu_btn{
     padding: 16px;
     border-radius: 15px;
     text-transform: uppercase;
+    margin-bottom: 100px;
 }
 /* Meal Plan css section end  */
+/* Recipes css section start  */
+#recipes{
+    background-color: #ffebe1;
+    padding: 114px 0;
+    position: relative;
+    z-index: 1;
+}
+#recipes .recipes_shape{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#recipes .recipes_content{
+    width: 60%;
+}
+#recipes .recipes_img{
+    width: 40%;
+}
+#recipes .recipes_content h6{
+    font-size: 19px;
+    font-weight: 700;
+    color: #639383;
+    text-transform: uppercase;
+}
+#recipes .recipes_content h2{
+    color: #dd6f17;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#recipes .recipes_content .recipes_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+#recipes .recipes_content .recipes_container .recipes_iteam{
+    width: 50%;
+}
+#recipes .recipes_content .recipes_container .recipes_iteam a{
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff4ee;
+    background-color: #639383;
+    padding: 16px;
+    border-radius: 15px;
+    margin-top: -100px;
+    margin-bottom: 30px;
+}
+#recipes .recipes_img img{
+    width: 100%;
+}
+/* Recipes css section end  */
+/* Process css section start  */
+#process{
+    background-color: #649483;
+    padding: 117px 0;
+}
+#process .arrow{
+    width: 25px;
+    height: 10px;
+}
+#process .process_title h2{
+    font-size: 100px;
+    font-weight: 700;
+    color: #ffece1;
+    text-transform: capitalize;
+}
+#process .process_title p{
+    font-size: 19px;
+    color: #ffece1;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+#process .process_iteam{
+    width: 28%;
+    background-color: #ffebe1;
+    margin: 0 20px;
+    padding: 40px 22px;
+    border-radius: 10px;
+}
+#process .process_iteam h4{
+    font-size: 29px;
+    font-weight: 700;
+    color: #dd6f17;
+    text-transform: capitalize;
+    text-align: center;
+}
+#process .process_iteam img{
+    padding: 70px 80px;
+}
+#process .process_iteam p{
+    font-size: 19px;
+    font-weight: 400;
+    color: #dd7017;
+    text-transform: capitalize;
+    text-align: center;
+}
+/* Process css section end  */
