@@ -378,13 +378,27 @@ nav .shop_cart ul li:hover .menu_btn{
     text-transform: capitalize;
     text-align: center;
 }
+/* #process .process_iteam .arrow{
+    padding-top: 164px;
+} */
 /* Process css section end  */
 /* Meal Plan_2 css section start  */
+/* #meal_plan_2{
+    position: relative;
+    z-index: -1;
+} */
+/* #meal_plan_2 .meal_ab{
+    position: absolute;
+    right: 112px;
+    width: 40%;
+    z-index: 1;
+} */
 #meal_plan_2 .meal_plan_2_content{
     width: 50%;
-    padding-top: 240px;
+    /* padding-top: 240px;
     padding-bottom: 290px;
-    padding-left: 136px;
+    padding-left: 136px; */
+    padding: 240px 0 290px 136px;
 }
 #meal_plan_2 .meal_plan_2_content h2{
     font-size: 100px;
@@ -421,10 +435,33 @@ nav .shop_cart ul li:hover .menu_btn{
 #meal_plan_2 .meal_plan_2_img{
     background-color: #dd6f17;
     width: 414px;
-    padding-right: -136px;
-
+    margin-left: 267.5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+#meal_plan_2 .meal_plan_2_img .meal_ab{
+    position: absolute;
+    top: 180px;
+    left: -200px;
+    right: 112px;
+    width: 40%;
+    z-index: -1;
+    width: 500px;
 }
 #meal_plan_2 .meal_plan_2_img .meal_plan_2_img_content{
+    text-align: center;
+    width: 160px;
+    margin: auto;
+    padding-top: 90px;
+}
+#meal_plan_2 .meal_plan_2_img .meal_plan_2_img_content img{
+    margin-left: 100px;
+}
+#meal_plan_2 .meal_plan_2_img .meal_plan_2_img_content p{
+    color: #ffece1;
+    padding-top: 10px;
 }
 /* Meal Plan_2 css section end  */
 /* Reviow css section start  */
@@ -552,6 +589,10 @@ nav .shop_cart ul li:hover .menu_btn{
     color: #ffece1;
     line-height: 2.5;
     text-transform: capitalize;
+    transition: 0.5s;
+}
+#footer .footer_iteam ul li:hover{
+    text-decoration: underline;
 }
 #footer .footer_iteam p{
     font-size: 17px;
@@ -583,9 +624,10 @@ nav .shop_cart ul li:hover .menu_btn{
     text-transform: uppercase;
     border-radius: 15px;
     color: #639383;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 #footer .copyright{
     display: flex;
