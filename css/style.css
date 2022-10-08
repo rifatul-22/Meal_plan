@@ -378,20 +378,15 @@ nav .shop_cart ul li:hover .menu_btn{
     text-transform: capitalize;
     text-align: center;
 }
-/* #process .process_iteam .arrow{
-    padding-top: 164px;
-} */
 /* Process css section end  */
 /* Meal Plan_2 css section start  */
 /* #meal_plan_2{
     position: relative;
-    z-index: -1;
 } */
-/* #meal_plan_2 .meal_ab{
+/* #meal_plan_2 .meal_plan_2_shape{
     position: absolute;
-    right: 112px;
-    width: 40%;
-    z-index: 1;
+    top: 0;
+    bottom: 0;
 } */
 #meal_plan_2 .meal_plan_2_content{
     width: 50%;
@@ -443,7 +438,7 @@ nav .shop_cart ul li:hover .menu_btn{
 }
 #meal_plan_2 .meal_plan_2_img .meal_ab{
     position: absolute;
-    top: 180px;
+    top: 200px;
     left: -200px;
     right: 112px;
     width: 40%;
