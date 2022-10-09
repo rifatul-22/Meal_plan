@@ -380,14 +380,16 @@ nav .shop_cart ul li:hover .menu_btn{
 }
 /* Process css section end  */
 /* Meal Plan_2 css section start  */
-/* #meal_plan_2{
+#meal_plan_2{
     position: relative;
-} */
-/* #meal_plan_2 .meal_plan_2_shape{
+    z-index: 1;
+}
+#meal_plan_2 .shape-3{
     position: absolute;
-    top: 0;
+    top: -280px;
     bottom: 0;
-} */
+    z-index: -1;
+}
 #meal_plan_2 .meal_plan_2_content{
     width: 50%;
     /* padding-top: 240px;
@@ -513,13 +515,13 @@ nav .shop_cart ul li:hover .menu_btn{
 }
 #meal_plan_3 .left_shape{
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     z-index: -1;
 }
 #meal_plan_3 .right_shape{
     position: absolute;
-    top: 0;
+    top: -85px;
     right: 80px;
     z-index: -1;
 }
