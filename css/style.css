@@ -4,9 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --primaryColor: #ffece1;
+    --secondryColor: #649483;
+    --menuColor: #649483;
+}
+/* body.darkmode{
+    --primaryColor: #333;
+    --secondryColor: #4444;
+    --menuColor: #649483;
+} */
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+/* body.darkmode{
+    background: #111;
+} */
 .container{
     width: 1170px;
     margin: auto;
@@ -21,9 +35,12 @@ ul{
 a{
     text-decoration: none;
 }
+/* common css section end  */
 #preloader{
     position: fixed;
-    z-index: 999999;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
     width: 100%;
     height: 100%;
     background: #fff;
@@ -31,10 +48,9 @@ a{
     align-items: center;
     justify-content: center;
 }
-/* common css section end  */
 /* nav css section start  */
 nav{
-    background-color: #ffece1;
+    background-color: var(--primaryColor);
     box-shadow: 0px 1px 5px 4px rgba(146, 127, 116, 0.21);
     z-index: 999;
     position: relative;
@@ -75,7 +91,7 @@ nav .menu ul{
 }
 nav .menu ul li a{
     display: inline-block;
-    color: #649483;
+    color: var(--menuColor);
     font-size: 19px;
     text-transform: capitalize;
     padding: 52px 21px;
@@ -89,7 +105,7 @@ nav .shop_cart ul{
 }
 nav .shop_cart ul li a{
     padding: 9px;
-    color: #649483;
+    color: var(--menuColor);
     font-size: 19px;
     font-weight: 700;
     text-transform: capitalize;
@@ -98,9 +114,9 @@ nav .shop_cart ul li a i{
     font-size: 25px;
 }
 nav .shop_cart ul li .menu_btn{
-    background-color: #649483;
+    background-color: var(--secondryColor);
     padding: 11px 9px;
-    color: #ffece1;
+    color: var(--primaryColor);
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -110,7 +126,7 @@ nav .shop_cart ul li:hover .menu_btn{
 /* nav css section end  */
 /* Banner css section start  */
 #banner{
-    background: #ffebe1;
+    background: var(--primaryColor);
     position: relative;
     z-index: 1;
 }
@@ -143,12 +159,12 @@ nav .shop_cart ul li:hover .menu_btn{
     font-size: 19px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #649483;
+    color: var(--secondryColor);
     line-height: 2;
 }
 #banner .banner_img p{
     font-size: 16px;
-    color: #649483;
+    color: var(--secondryColor);
     text-transform: capitalize;
     width: 360px;
     /* margin: auto; */
@@ -167,7 +183,7 @@ nav .shop_cart ul li:hover .menu_btn{
     color: #fff4ee;
     font-weight: 700;
     border: 4px solid #649483;
-    background-color: #639383;
+    background-color: var(--secondryColor);
     padding: 16px;
     margin-right: 18px;
     border-radius: 15px;
@@ -175,7 +191,7 @@ nav .shop_cart ul li:hover .menu_btn{
 }
 #banner .container .banner_content a:hover{
     background-color: #ffebe1;
-    color: #639383;
+    color: var(--secondryColor);
 }
 #banner .container .meal_option{
     margin-top: 70px;
@@ -199,7 +215,7 @@ nav .shop_cart ul li:hover .menu_btn{
 /* Banner css section end  */
 /* Our Favorite css section start  */
 #favorite{
-    background: #649483;
+    background: var(--secondryColor);
     padding: 115px 0;
 }
 #favorite .title h1{
@@ -226,7 +242,7 @@ nav .shop_cart ul li:hover .menu_btn{
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    color: #639383;
+    color: var(--secondryColor);
 } 
 #favorite .row .fav_iteam img{
     padding: 36px 30px;
