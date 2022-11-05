@@ -63,6 +63,7 @@ nav.active{
     z-index: 9999;
     transition: 1s;
     animation: menu_fix 1s;
+    transition: 1s;
 }
 @keyframes menu_fix {
     from{
@@ -143,6 +144,64 @@ nav .shop_cart ul li:hover .menu_btn{
     bottom: 0;
     z-index: -1;
 }
+#banner .banner_slider_iteam{
+    width: 300px;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: cover;
+}
+#banner .banner_slider_arrews{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    background: #dd6f17;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+#banner .banner_slider_arrews:hover{
+    opacity: 1;
+}
+#banner .banner_slider_arrews.fa-chevron-right{
+    left: 10px;
+}
+#banner .banner_slider_dots{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+}
+#banner .banner_slider_dots li button{
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #dd6f17;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+#banner .banner_slider_dots li button:hover{
+    opacity: 1;
+    background: #333;
+}
+#banner .banner_slider_dots li.slick-active button{
+    opacity: 1;
+    background: #333;
+}
+#banner .banner_slider_arrews.fa-chevron-left{
+    right: 20px;
+}
 #banner .banner_img{
     width: 50%;
 }
@@ -170,14 +229,14 @@ nav .shop_cart ul li:hover .menu_btn{
     /* margin: auto; */
     text-align: center;
 }
-#banner .container .banner_content h2{
+#banner .banner_content h2{
    padding-top: 235px;
    font-size: 100px;
    font-weight: 700;
    text-transform: capitalize;
    color: #dd6f17; 
 }
-#banner .container .banner_content a{
+#banner .banner_content a{
     display: inline-block;
     text-transform: uppercase;
     color: #fff4ee;
@@ -189,11 +248,11 @@ nav .shop_cart ul li:hover .menu_btn{
     border-radius: 15px;
     transition: 0.5s;
 }
-#banner .container .banner_content a:hover{
+#banner .banner_content a:hover{
     background-color: #ffebe1;
     color: var(--secondryColor);
 }
-#banner .container .meal_option{
+#banner .meal_option{
     margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
@@ -202,10 +261,10 @@ nav .shop_cart ul li:hover .menu_btn{
     margin-bottom: 140px;
     border-radius: 25px;
 }
-#banner .container .meal_option .meal_iteam{
+#banner .meal_option .meal_iteam{
     width: 25%;
 }
-#banner .container .meal_option .meal_iteam p{
+#banner .meal_option .meal_iteam p{
      font-size: 12px;
      font-weight: 400;
      text-transform: capitalize;
@@ -548,6 +607,33 @@ nav .shop_cart ul li:hover .menu_btn{
     text-transform: capitalize;
     color: #ffece1;
 }
+#review .review_dots{
+    display: flex;
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+}
+#review .review_dots li button{
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background: #dd7017;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#review .review_dots li button:hover{
+    opacity: 1;
+    background: #111;
+}
+#review .review_dots li.slick-active button{
+    opacity: 1;
+    background: #111;
+}
 /* Reviow css section end  */
 /* Meal Plan_3 css section start  */
 #meal_plan_3{
@@ -694,3 +780,20 @@ nav .shop_cart ul li:hover .menu_btn{
     margin: 0 9px;
 }
 /* footer css section end  */
+
+#backToTop{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 99999;
+    display: none;
+}
