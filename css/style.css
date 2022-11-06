@@ -8,19 +8,25 @@
     --primaryColor: #ffece1;
     --secondryColor: #649483;
     --menuColor: #649483;
+    --textColor: #649483;
+    --Color: #ffece1;
+    --dotsColor: #111;
 }
-/* body.darkmode{
-    --primaryColor: #333;
-    --secondryColor: #4444;
+body.darkMode{
+    --primaryColor: #111;
+    --secondryColor: #111;
     --menuColor: #649483;
-} */
+    --textColor: #fff;
+    --Color: #ffece1;
+    --dotsColor: #649483;
+}
 body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/* body.darkmode{
+body.darkMode{
     background: #111;
-} */
+}
 .container{
     width: 1170px;
     margin: auto;
@@ -34,6 +40,9 @@ ul{
 }
 a{
     text-decoration: none;
+}
+#mode{
+    font-size: 25px;
 }
 /* common css section end  */
 #preloader{
@@ -115,9 +124,9 @@ nav .shop_cart ul li a i{
     font-size: 25px;
 }
 nav .shop_cart ul li .menu_btn{
-    background-color: var(--secondryColor);
+    background-color: #639383;
     padding: 11px 9px;
-    color: var(--primaryColor);
+    color: var(--Color);
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -218,12 +227,12 @@ nav .shop_cart ul li:hover .menu_btn{
     font-size: 19px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--secondryColor);
+    color: var(--textColor);
     line-height: 2;
 }
 #banner .banner_img p{
     font-size: 16px;
-    color: var(--secondryColor);
+    color: var(--textColor);
     text-transform: capitalize;
     width: 360px;
     /* margin: auto; */
@@ -242,7 +251,7 @@ nav .shop_cart ul li:hover .menu_btn{
     color: #fff4ee;
     font-weight: 700;
     border: 4px solid #649483;
-    background-color: var(--secondryColor);
+    background-color: #639383;
     padding: 16px;
     margin-right: 18px;
     border-radius: 15px;
@@ -276,6 +285,7 @@ nav .shop_cart ul li:hover .menu_btn{
 #favorite{
     background: var(--secondryColor);
     padding: 115px 0;
+    border-top: 2px solid #ffebe1;
 }
 #favorite .title h1{
     font-size: 80px;
@@ -291,17 +301,18 @@ nav .shop_cart ul li:hover .menu_btn{
 }
 #favorite .row .fav_iteam{
     width: 30%;
-    background-color: #ffebe1;
+    background-color: var(--primaryColor);
     margin: 0 14px;
     padding: 70px 30px;
     border-radius: 25px;
+    border: 2px solid #ffebe1;
 }
 #favorite .row .fav_iteam h6{
     font-size: 19px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    color: var(--secondryColor);
+    color: var(--textColor);
 } 
 #favorite .row .fav_iteam img{
     padding: 36px 30px;
@@ -316,9 +327,10 @@ nav .shop_cart ul li:hover .menu_btn{
 /* Our Favorite css section end  */
 /* Meal Plan css section start  */
 #meal_plan{
-    background: #ffebe1;
+    background: var(--primaryColor);
     position: relative;
     z-index: 1;
+    border-top: 2px solid #ffebe1;
 }
 #meal_plan .meal_shap{
     position: absolute;
@@ -343,7 +355,7 @@ nav .shop_cart ul li:hover .menu_btn{
     font-size: 19px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #639383;
+    color: var(--textColor);
 }
 #meal_plan .meal_plan_content h2{
     font-size: 80px;
@@ -356,7 +368,7 @@ nav .shop_cart ul li:hover .menu_btn{
     font-size: 19px;
     font-weight: 400;
     text-transform: capitalize;
-    color: #639383;
+    color: var(--textColor);
     width: 600px;
     margin-bottom: 50px;
 }
@@ -382,8 +394,9 @@ nav .shop_cart ul li:hover .menu_btn{
 /* Meal Plan css section end  */
 /* Recipes css section start  */
 #recipes{
-    background-color: #ffebe1;
+    background-color: var(--primaryColor);
     padding: 114px 0;
+    border-top: 2px solid #ffebe1;
     position: relative;
     z-index: 1;
 }
@@ -402,7 +415,7 @@ nav .shop_cart ul li:hover .menu_btn{
 #recipes .recipes_content h6{
     font-size: 19px;
     font-weight: 700;
-    color: #639383;
+    color: var(--textColor);
     text-transform: uppercase;
 }
 #recipes .recipes_content h2{
@@ -437,8 +450,9 @@ nav .shop_cart ul li:hover .menu_btn{
 /* Recipes css section end  */
 /* Process css section start  */
 #process{
-    background-color: #649483;
+    background-color: var(--secondryColor);
     padding: 117px 0;
+    border-top: 2px solid #ffebe1;
     position: relative;
     z-index: 999;
 }
@@ -461,10 +475,11 @@ nav .shop_cart ul li:hover .menu_btn{
 }
 #process .process_iteam{
     width: 28%;
-    background-color: #ffebe1;
+    background-color: var(--primaryColor);
     margin: 0 20px;
     padding: 40px 22px;
     border-radius: 10px;
+    border: 2px solid #ffebe1;
 }
 #process .process_iteam h4{
     font-size: 29px;
@@ -486,6 +501,7 @@ nav .shop_cart ul li:hover .menu_btn{
 /* Process css section end  */
 /* Meal Plan_2 css section start  */
 #meal_plan_2{
+    border-top: 2px solid #ffebe1;
     position: relative;
     z-index: 1;
 }
@@ -511,7 +527,7 @@ nav .shop_cart ul li:hover .menu_btn{
 }
 #meal_plan_2 .meal_plan_2_content p{
     width: 600px;
-    color: #639383;
+    color: var(--textColor);
     font-size: 19px;
     font-weight: 400;
     text-transform: capitalize;
@@ -568,8 +584,9 @@ nav .shop_cart ul li:hover .menu_btn{
 /* Meal Plan_2 css section end  */
 /* Reviow css section start  */
 #review{
-    background-color: #639383;
+    background-color: var(--secondryColor);
     padding-bottom: 170px;
+    border-top: 2px solid #ffebe1;
     position: relative;
     z-index: 999;
 }
@@ -628,16 +645,17 @@ nav .shop_cart ul li:hover .menu_btn{
 }
 #review .review_dots li button:hover{
     opacity: 1;
-    background: #111;
+    background: var(--dotsColor);
 }
 #review .review_dots li.slick-active button{
     opacity: 1;
-    background: #111;
+    background: var(--dotsColor);
 }
 /* Reviow css section end  */
 /* Meal Plan_3 css section start  */
 #meal_plan_3{
-    background-color: #ffebe1;
+    background-color: var(--primaryColor);
+    border-top: 2px solid #ffebe1;
     position: relative;
     z-index: 1;
 }
@@ -676,7 +694,7 @@ nav .shop_cart ul li:hover .menu_btn{
 #meal_plan_3 .meal_plan_3_content p{
     font-size: 17px;
     font-weight: 400;
-    color: #639383;
+    color: var(--textColor);
     width: 605px;
     margin: auto;
 }
@@ -701,7 +719,8 @@ nav .shop_cart ul li:hover .menu_btn{
 /* Meal Plan_3 css section end  */
 /* footer css section start  */
 #footer{
-    background-color: #639383;
+    background-color: var(--secondryColor);
+    border-top: 2px solid #ffebe1;
 }
 #footer .footer_iteam .footer_content{
     display: flex;
@@ -740,7 +759,7 @@ nav .shop_cart ul li:hover .menu_btn{
     padding: 13px;
     outline: none;
     border: 3px solid #ffece1;
-    background-color: #639383;
+    background-color: var(--secondryColor);
     border-radius: 15px;
     margin-bottom: 15px;
 }

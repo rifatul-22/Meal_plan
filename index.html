@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="darkmode">
+<body>
     <div id="preloader">
         <img src="img/loader_food.gif">
     </div>
@@ -29,6 +29,7 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Shop</a></li>
                         <li><a href="#">Contact us</a></li>
+                        <li><a href="#0"><i class="fas fa-moon" id="mode"></i></a></li>
                     </ul>
                 </div>
                 <div class="shop_cart">
@@ -390,36 +391,22 @@
       <script src="js/jquery-1.12.4.min.js"></script>
       <script src="js/slick.min.js"></script>
       <script src="js/app.js"></script>
+      <script>
+        var darkMode_icon = document.getElementById('mode');
+        var darkMode = localStorage.getItem("dark-mode");
+
+
+        darkMode_icon.addEventListener('click', function(){
+        document.body.classList.toggle('darkMode');
+
+          if(darkMode_icon.classList.contains('fa-moon')){
+               darkMode_icon.classList.add('fa-sun');
+               darkMode_icon.classList.remove('fa-moon');
+            }else{
+               darkMode_icon.classList.remove('fa-sun');
+               darkMode_icon.classList.add('fa-moon');
+            }
+        });
+      </script>
 </body>
 </html>
-
-
-
- <!-- <div class="banner_img">
-    <img src="img/meal_banner_bg.png" alt="">
-    <h4>SMOKED MILKFISH GARDEN SALAD</h4>
-    <p>Includes: Vegetable Lasagna, Fresh Fruit Platter, Fresh Lemon Juice, and Creme Brulee</p>
-</div>
-<div class="banner_content">
-    <h2>Worry-Free<br>Meal Plans.</h2>
-    <a href="#">Start Your Journey</a>
-    <a href="#">Learn More</a>
-    <div class="meal_option">
-        <div class="meal_iteam">
-            <img src="img/meal_op_1.png" alt="">
-            <p>Pomegranate Glazed Salmon</p>
-        </div>
-        <div class="meal_iteam">
-            <img src="img/meal_op_2.png" alt="">
-            <p>Pomegranate Pear Green Salad</p>
-        </div>
-        <div class="meal_iteam">
-            <img src="img/meal_op_3.png" alt="">
-            <p>Chef's Signature Meal Plan</p>
-        </div>
-        <div class="meal_iteam">
-            <img src="img/meal_op_4.png" alt="">
-            <p>Pomegranate Pear Green Salad w/ Dressing</p>
-        </div>
-    </div>
- </div> -->
