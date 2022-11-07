@@ -41,4 +41,14 @@ $(function(){
             scrollTop: 0
         })
     });
-})
+    $('#mode').on('click', function(){
+        $('body').toggleClass('darkMode');
+        if($('#mode').hasClass('fa-moon')){
+            $('#mode').addClass('fa-sun');
+            $('#mode').removeClass('fa-moon');
+        }else{
+            $('#mode').removeClass('fa-sun');
+            $('#mode').addClass('fa-moon');
+        }
+    });
+});
